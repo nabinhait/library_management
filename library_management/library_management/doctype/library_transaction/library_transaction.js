@@ -12,3 +12,12 @@ frappe.ui.form.on("Library Transaction", "library_member", function(frm) {
 		}
 	})
 })
+
+// frappe.ui.form.on("Library Transaction", "onload", function(frm) {
+// 	msgprint("onload");
+// })
+//
+// frappe.ui.form.on("Library Transaction", "refresh", function(frm) {
+// 	msgprint("refresh");
+// })
+//

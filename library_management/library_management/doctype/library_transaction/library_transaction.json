@@ -17,7 +17,7 @@
   {
    "default": "Today", 
    "fieldname": "transaction_date", 
-   "fieldtype": "Datetime", 
+   "fieldtype": "Date", 
    "label": "Transaction Date", 
    "permlevel": 0, 
    "reqd": 1
@@ -55,9 +55,19 @@
    "label": "Member Name", 
    "permlevel": 0, 
    "read_only": 1
+  }, 
+  {
+   "fieldname": "amended_from", 
+   "fieldtype": "Link", 
+   "label": "Amended From", 
+   "no_copy": 1, 
+   "options": "Library Transaction", 
+   "print_hide": 1, 
+   "read_only": 1
   }
  ], 
- "modified": "2014-05-10 15:07:12.563492", 
+ "is_submittable": 1, 
+ "modified": "2014-11-27 16:35:05.843731", 
  "modified_by": "Administrator", 
  "module": "Library Management", 
  "name": "Library Transaction", 
@@ -65,12 +75,15 @@
  "owner": "Administrator", 
  "permissions": [
   {
+   "amend": 1, 
+   "cancel": 1, 
    "create": 1, 
    "delete": 1, 
    "permlevel": 0, 
    "read": 1, 
    "report": 1, 
    "role": "Librarian", 
+   "submit": 1, 
    "write": 1
   }
  ]
